@@ -1,0 +1,7 @@
+Step 1- Take input from the BATP pin by using a suitable command (for example, analogRead(BATP); in an Arduino)
+
+Step 2- Convert it to the proper analog value by mapping it according to the number of bits in the built-in ADC of the
+IC (for example, 10-bit ADC in an Arduino), and store it in a variable, say input_voltage
+
+Step 3- Use a voltage divider formula to find out the actual HV voltage as follows-
+float actual_voltage = 217.7*input_voltage;
